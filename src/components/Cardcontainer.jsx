@@ -6,7 +6,7 @@ export default function Cardcontainer({ cards }) {
   return (
     <Container>
       {cards.map((card) => {
-        return <Card card={card} />;
+        return <Card card={card} key={card.id} />;
       })}
     </Container>
   );
